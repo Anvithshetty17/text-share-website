@@ -162,6 +162,26 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link 
+              to="/about" 
+              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              <span className="nav-icon">ℹ️</span>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/contact" 
+              className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              <span className="nav-icon">📞</span>
+              Contact
+            </Link>
+          </li>
+          <li>
             <button 
               onClick={toggleTheme} 
               className="theme-toggle"
