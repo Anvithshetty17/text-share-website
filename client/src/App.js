@@ -13,6 +13,9 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import TypingRace from './components/TypingRace';
+import GamingZone from './components/GamingZone';
+import TimetableMaker from './components/TimetableMaker';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path="/resume-builder" element={<ResumeBuilder />} />
             <Route path="/link-shortener" element={<LinkShortener />} />
             <Route path="/student-tools" element={<StudentTools />} />
+            <Route path="/typing-race" element={<TypingRace />} />
+            <Route path="/gaming-zone" element={<GamingZone />} />
+            <Route path="/timetable-maker" element={<TimetableMaker />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />

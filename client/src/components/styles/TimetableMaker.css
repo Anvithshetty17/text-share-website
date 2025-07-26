@@ -1,0 +1,426 @@
+.timetable-maker-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.timetable-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timetable-header h1 {
+  color: #2563eb;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.timetable-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.user-info-section {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.user-info-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.user-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-field label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.info-field input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.info-field input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.controls-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.control-group h3 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-success, .btn-info, .btn-danger {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #059669;
+}
+
+.btn-info {
+  background: #0ea5e9;
+  color: white;
+}
+
+.btn-info:hover {
+  background: #0284c7;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.legend h4 {
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.legend-items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.timetable-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.timetable-info-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.timetable-info-header h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.student-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.student-info p {
+  margin: 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+.timetable-wrapper {
+  overflow-x: auto;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: 1000px;
+}
+
+.time-header, .day-header {
+  background: #1f2937;
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #374151;
+}
+
+.time-slot {
+  background: #f8fafc;
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  min-width: 120px;
+  position: relative;
+}
+
+.time-slot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.remove-slot-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.remove-slot-btn:hover {
+  opacity: 1;
+}
+
+.timetable-cell {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+  min-height: 100px;
+  width: 150px;
+}
+
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+}
+
+.type-select, .subject-input, .teacher-input, .room-input {
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.type-select {
+  background: white;
+  font-weight: 600;
+}
+
+.subject-input {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.teacher-input {
+  color: #6b7280;
+}
+
+.room-input {
+  color: #9ca3af;
+}
+
+.cell-lecture {
+  background: #f9fafb;
+}
+
+.cell-lab {
+  background: #dbeafe;
+}
+
+.cell-tutorial {
+  background: #d1fae5;
+}
+
+.cell-break {
+  background: #fef3c7;
+}
+
+.saved-timetables-section {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.saved-timetables-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.saved-timetables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.saved-timetable-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s;
+}
+
+.saved-timetable-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.saved-timetable-card h4 {
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.saved-timetable-card p {
+  margin: 5px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.no-saved-timetables {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 40px;
+}
+
+/* Print and PDF export styles */
+@media print {
+  .controls-section,
+  .saved-timetables-section,
+  .remove-slot-btn {
+    display: none !important;
+  }
+  
+  .timetable-section {
+    padding: 0;
+    border: none;
+  }
+  
+  .timetable {
+    font-size: 10px;
+  }
+  
+  .time-header, .day-header {
+    background: #000 !important;
+    color: white !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .timetable-maker-container {
+    padding: 15px;
+  }
+  
+  .controls-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .control-buttons {
+    justify-content: center;
+  }
+  
+  .legend-items {
+    justify-content: center;
+  }
+  
+  .student-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .saved-timetables-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timetable {
+    font-size: 10px;
+    min-width: 800px;
+  }
+  
+  .timetable-cell {
+    width: 120px;
+    min-height: 80px;
+  }
+}

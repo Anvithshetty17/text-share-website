@@ -1,0 +1,221 @@
+/* Reaction Time Game Styles */
+.reaction-time-game {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.game-header h3 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #374151;
+  flex-wrap: wrap;
+}
+
+.game-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.game-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.game-button:hover {
+  background: #2563eb;
+}
+
+.game-button.secondary {
+  background: #6b7280;
+}
+
+.game-button.secondary:hover {
+  background: #4b5563;
+}
+
+.reaction-area {
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  transition: background-color 0.3s ease;
+  border: 3px solid #e5e7eb;
+  position: relative;
+  user-select: none;
+}
+
+.reaction-message {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.time-rating {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.next-round {
+  margin: 20px 0;
+}
+
+.results-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.results-section h4 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.times-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.time-result {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.time-result.failed {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+.round-number {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.time-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.time-rating-small {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.game-result {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.game-result h3 {
+  color: #065f46;
+  margin-bottom: 10px;
+}
+
+.game-instructions {
+  background: #f0fdf4;
+  padding: 15px;
+  border-radius: 8px;
+  color: #166534;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.game-instructions p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.reaction-tips {
+  background: #eff6ff;
+  padding: 15px;
+  border-radius: 8px;
+  color: #1e40af;
+  text-align: left;
+}
+
+.reaction-tips h4 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.reaction-tips ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.reaction-tips li {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .game-info {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .reaction-area {
+    height: 250px;
+    margin: 15px 0;
+  }
+  
+  .reaction-message {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  
+  .times-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .time-result {
+    padding: 10px;
+  }
+  
+  .game-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-button {
+    width: 200px;
+  }
+}

@@ -1,0 +1,248 @@
+/* Color Match Game Styles */
+.color-match-game {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.game-header h3 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #374151;
+  flex-wrap: wrap;
+}
+
+.difficulty-section {
+  margin-bottom: 15px;
+}
+
+.difficulty-section label {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.difficulty-section select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  color: #374151;
+}
+
+.game-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.game-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.game-button:hover {
+  background: #2563eb;
+}
+
+.game-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.game-button.secondary {
+  background: #6b7280;
+}
+
+.game-button.secondary:hover {
+  background: #4b5563;
+}
+
+.game-area {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.target-section {
+  margin-bottom: 25px;
+}
+
+.target-section h4 {
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.target-color-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  background: #eff6ff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 2px solid #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color-option {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid #e5e7eb;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.color-option:hover {
+  transform: scale(1.05);
+  border-color: #374151;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.color-option:active {
+  transform: scale(0.95);
+}
+
+.color-hover-name {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.color-option:hover .color-hover-name {
+  opacity: 1;
+}
+
+.feedback {
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.feedback.correct {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.feedback.wrong {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.game-result {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.game-result.won {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.game-result.lost {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.game-result h3 {
+  margin-bottom: 10px;
+}
+
+.game-instructions {
+  background: #f0fdf4;
+  padding: 15px;
+  border-radius: 8px;
+  color: #166534;
+  text-align: left;
+}
+
+.game-instructions p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .game-info {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .target-color-name {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+  }
+  
+  .color-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 300px;
+  }
+  
+  .color-option {
+    min-height: 60px;
+  }
+  
+  .color-hover-name {
+    font-size: 0.7rem;
+    bottom: -25px;
+  }
+  
+  .game-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-button {
+    width: 200px;
+  }
+}

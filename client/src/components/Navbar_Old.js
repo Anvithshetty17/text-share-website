@@ -7,8 +7,6 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-  const [scrollDirection, setScrollDirection] = useState('up');
-  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
 
   useEffect(() => {
@@ -19,21 +17,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setIsScrolled(currentScrollY > 10);
-      
-      // Determine scroll direction
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setScrollDirection('down');
-      } else {
-        setScrollDirection('up');
-      }
-      setLastScrollY(currentScrollY);
+      setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   // Enhanced mobile menu auto-close on route change
   useEffect(() => {
@@ -82,7 +71,12 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
+  };
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -98,11 +92,11 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${scrollDirection === 'down' ? 'navbar-hidden' : ''}`}>
+    <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="nav-brand" onClick={closeMenu}>
-          <span className="brand-icon">📝</span>
-          <span className="brand-text">GoText</span>
+          <span className="brand-icon">✨</span>
+          <span className="brand-text">TextShare</span>
         </Link>
         
         <button 
@@ -129,7 +123,7 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <span className="nav-icon">🏠</span>
-              Home
+              <span className="nav-link-text">Home</span>
             </Link>
           </li>
           <li>
@@ -138,38 +132,8 @@ const Navbar = () => {
               className={`nav-link ${isActive('/text-share') ? 'active' : ''}`}
               onClick={closeMenu}
             >
-              <span className="nav-icon">📝</span>
-              Text Share
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/resume-builder" 
-              className={`nav-link ${isActive('/resume-builder') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">📄</span>
-              Resume Builder
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/link-shortener" 
-              className={`nav-link ${isActive('/link-shortener') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🔗</span>
-              Link Shortener
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/student-tools" 
-              className={`nav-link ${isActive('/student-tools') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🛠️</span>
-              Student Tools
+              <span className="nav-icon">�</span>
+              <span className="nav-link-text">Text Share</span>
             </Link>
           </li>
           <li>
@@ -178,8 +142,8 @@ const Navbar = () => {
               className={`nav-link ${isActive('/typing-race') ? 'active' : ''}`}
               onClick={closeMenu}
             >
-              <span className="nav-icon">🏎️</span>
-              Typing Race
+              <span className="nav-icon">⚡</span>
+              <span className="nav-link-text">Typing Race</span>
             </Link>
           </li>
           <li>
@@ -189,49 +153,29 @@ const Navbar = () => {
               onClick={closeMenu}
             >
               <span className="nav-icon">🎮</span>
-              Gaming Zone
+              <span className="nav-link-text">Gaming Zone</span>
             </Link>
           </li>
           <li>
             <Link 
-              to="/timetable-maker" 
-              className={`nav-link ${isActive('/timetable-maker') ? 'active' : ''}`}
+              to="/timetable" 
+              className={`nav-link ${isActive('/timetable') ? 'active' : ''}`}
               onClick={closeMenu}
             >
               <span className="nav-icon">📅</span>
-              Timetable Maker
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/about" 
-              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">ℹ️</span>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/contact" 
-              className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">📞</span>
-              Contact
+              <span className="nav-link-text">Timetable</span>
             </Link>
           </li>
           <li>
             <button 
               onClick={toggleTheme} 
-              className="theme-toggle"
+              className="theme-toggle nav-link"
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
             >
-              <span className="theme-icon">
+              <span className="nav-icon">
                 {theme === 'light' ? '🌙' : '☀️'}
               </span>
-              <span className="theme-text">
+              <span className="nav-link-text">
                 {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
               </span>
             </button>
