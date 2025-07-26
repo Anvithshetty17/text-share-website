@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gotext.com/</loc>
+    <loc>https://gotext.anvithshetty.me/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gotext.com/text-share</loc>
+    <loc>https://gotext.anvithshetty.me/text-share</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gotext.com/link-shortener</loc>
+    <loc>https://gotext.anvithshetty.me/link-shortener</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gotext.com/resume-builder</loc>
+    <loc>https://gotext.anvithshetty.me/resume-builder</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gotext.com/student-tools</loc>
+    <loc>https://gotext.anvithshetty.me/student-tools</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gotext.com/about</loc>
+    <loc>https://gotext.anvithshetty.me/about</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://gotext.com/contact</loc>
+    <loc>https://gotext.anvithshetty.me/contact</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://gotext.com/privacy</loc>
+    <loc>https://gotext.anvithshetty.me/privacy</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://gotext.com/terms</loc>
+    <loc>https://gotext.anvithshetty.me/terms</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

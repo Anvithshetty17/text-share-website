@@ -16,7 +16,22 @@ const limiter = rateLimit({
 
 // Middleware
 app.use(limiter);
-app.use(cors());
+const allowedOrigins = [
+  'https://gotext.anvithshetty.me',
+  'http://localhost:3000' // dev environment
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    callback(new Error('Not allowed by CORS'));
+  },
+  methods: ['GET', 'POST', 'OPTIONS'],
+  credentials: true,
+}));
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
