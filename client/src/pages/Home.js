@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import AdBanner from "../components/AdBanner";
 import BannerAdBox from "../components/BannerAdBox";
 
-import AdBanner2 from "../components/AdBanner2";
+
 
 const Home = () => {
   const features = [
@@ -90,7 +90,7 @@ const Home = () => {
         </div>
       </div>
 
-          <AdBanner2 />
+          
       <div className="content-section mt-5">
         <div className="container">
           <h2 className="section-title text-center mb-4">Why Choose GoText?</h2>
