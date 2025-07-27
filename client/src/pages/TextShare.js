@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000';
 
@@ -102,6 +104,7 @@ const TextShare = () => {
   return (
     <div className="text-share-page">
       <div className="page-header text-center mb-4">
+           <AdBanner />
         <h1>Text Sharing</h1>
         <p className="text-muted">
           Share text securely with a 4-digit code. All texts auto-delete after 10 minutes.
@@ -209,7 +212,7 @@ const TextShare = () => {
           </div>
         </div>
       )}
-
+<BannerAdBox />
       {result && (
         <div className="result-section mt-4">
           {result.type === 'success' && (
