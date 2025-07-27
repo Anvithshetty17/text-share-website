@@ -1,7 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const BannerAdBox = () => {
+  const adRef = useRef(null);
+
   useEffect(() => {
+    if (!adRef.current) return;
+
+    // Clear previous content (optional, useful on hot reload)
+    adRef.current.innerHTML = "";
+
     const script1 = document.createElement("script");
     script1.type = "text/javascript";
     script1.innerHTML = `
@@ -13,21 +20,19 @@ const BannerAdBox = () => {
         'params': {}
       };
     `;
+
     const script2 = document.createElement("script");
     script2.type = "text/javascript";
     script2.src = "//www.highperformanceformat.com/9bc28105adf40e37d2c54ae07abb78a4/invoke.js";
     script2.async = true;
 
-    const container = document.getElementById("banner-iframe-wrapper");
-    if (container) {
-      container.appendChild(script1);
-      container.appendChild(script2);
-    }
+    adRef.current.appendChild(script1);
+    adRef.current.appendChild(script2);
   }, []);
 
   return (
     <div
-      id="banner-iframe-wrapper"
+      ref={adRef}
       style={{
         width: "300px",
         height: "250px",
@@ -38,6 +43,5 @@ const BannerAdBox = () => {
     ></div>
   );
 };
-
 
 export default BannerAdBox;
