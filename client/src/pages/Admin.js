@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000';
 
@@ -138,6 +140,8 @@ const Admin = () => {
   if (!isAuthenticated) {
     return (
       <div className="admin-login">
+
+      <BannerAdBox />
         <div className="login-container">
           <div className="card">
             <h1 className="card-title text-center">Admin Panel</h1>
@@ -206,6 +210,7 @@ const Admin = () => {
   return (
     <div className="admin-panel">
       <div className="admin-header">
+           <AdBanner />
         <h1>Admin Panel</h1>
         <button 
           className="btn btn-secondary"
