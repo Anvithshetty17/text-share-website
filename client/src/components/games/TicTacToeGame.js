@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BannerAdBox from "../BannerAdBox";
 
 const TicTacToeGame = ({ onGameEnd }) => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -183,6 +184,7 @@ const TicTacToeGame = ({ onGameEnd }) => {
 
   return (
     <div className="tic-tac-toe-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>❌⭕ Tic Tac Toe vs AI</h3>
         <div className="game-status">{getStatusMessage()}</div>
