@@ -186,7 +186,7 @@ const ColorMatchGame = ({ onGameEnd }) => {
 
   return (
     <div className="color-match-game">
-           <AdBanner />
+          
       <div className="game-header">
         <h3>🎨 Color Match</h3>
         <div className="game-info">
@@ -200,7 +200,7 @@ const ColorMatchGame = ({ onGameEnd }) => {
           )}
         </div>
       </div>
-
+ <AdBanner />
       <div className="difficulty-section">
         <label>Difficulty: </label>
         <select 
