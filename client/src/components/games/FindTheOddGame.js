@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './FindTheOddGame.css';
+import BannerAdBox from "../BannerAdBox";
 
 const FindTheOddGame = ({ onGameEnd }) => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -129,6 +130,7 @@ const FindTheOddGame = ({ onGameEnd }) => {
 
   return (
     <div className="find-odd-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>👁️ Find the Odd One Out</h3>
         <div className="game-info">
