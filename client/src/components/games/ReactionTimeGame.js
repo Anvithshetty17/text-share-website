@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ReactionTimeGame.css';
+import BannerAdBox from "../BannerAdBox";
 
 const ReactionTimeGame = ({ onGameEnd }) => {
   const [gameState, setGameState] = useState('waiting'); // waiting, ready, go, result, gameOver
@@ -131,6 +132,7 @@ const ReactionTimeGame = ({ onGameEnd }) => {
 
   return (
     <div className="reaction-time-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>⚡ Reaction Time Test</h3>
         <div className="game-info">
