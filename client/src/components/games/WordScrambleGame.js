@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './WordScrambleGame.css';
+import BannerAdBox from "../BannerAdBox";
 
 const WordScrambleGame = ({ onGameEnd }) => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -174,6 +175,7 @@ const WordScrambleGame = ({ onGameEnd }) => {
 
   return (
     <div className="word-scramble-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>🔤 Word Scramble</h3>
         <div className="game-info">
