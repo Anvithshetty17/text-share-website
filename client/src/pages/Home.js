@@ -168,7 +168,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+<BannerAdBox />
       <div className="cta-section mt-5">
         <div className="card text-center">
           <h2 className="mb-3">Ready to Get Started?</h2>
