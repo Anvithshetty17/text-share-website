@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -25,6 +27,7 @@ const ContactUs = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
+           <AdBanner />
       <div className="card">
         <h1 className="text-3xl font-bold text-center mb-6 text-primary">Contact Us</h1>
         <p className="text-center text-gray-600 mb-8">
@@ -81,7 +84,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </section>
-
+<BannerAdBox />
             <section>
               <h3 className="text-xl font-semibold mb-4 text-primary">What We Can Help With</h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
