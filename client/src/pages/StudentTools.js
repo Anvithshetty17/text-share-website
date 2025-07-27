@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const StudentTools = () => {
   const [activeTool, setActiveTool] = useState('gpa');
@@ -306,6 +308,7 @@ Best regards,
 
   return (
     <div className="student-tools-page">
+    <BannerAdBox />
       <div className="page-header text-center mb-4">
         <h1>Student Tools</h1>
         <p className="text-muted">
@@ -327,6 +330,7 @@ Best regards,
           ))}
         </div>
       </div>
+            <BannerAdBox />
 
       {activeTool === 'gpa' && (
         <div className="gpa-calculator">
