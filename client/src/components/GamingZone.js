@@ -10,6 +10,8 @@ import ColorMatchGame from './games/ColorMatchGame';
 import MathQuizGame from './games/MathQuizGame';
 import ReactionTimeGame from './games/ReactionTimeGame';
 import './styles/GamingZone.css';
+import AdBanner from "./AdBanner";
+import BannerAdBox from "./BannerAdBox";
 
 const GamingZone = () => {
   const [selectedGame, setSelectedGame] = useState(null);
@@ -183,6 +185,7 @@ const GamingZone = () => {
 
   return (
     <div className="gaming-zone-container">
+           <AdBanner />
       <div className="gaming-zone-header">
         <h1>🎮 Gaming Zone</h1>
         <p>Challenge yourself with our collection of fun and engaging games!</p>
@@ -220,7 +223,7 @@ const GamingZone = () => {
           </div>
         )}
       </div>
-
+<BannerAdBox />
       <div className="gaming-tips">
         <h3>🎯 Gaming Tips</h3>
         <ul>
