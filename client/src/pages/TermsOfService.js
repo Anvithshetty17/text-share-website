@@ -1,9 +1,13 @@
 import React from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const TermsOfService = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <div className="card">
+     <AdBanner />
+      <BannerAdBox />
         <h1 className="text-3xl font-bold text-center mb-6 text-primary">Terms of Service</h1>
         <p className="text-sm text-gray-600 mb-6 text-center">
           Last updated: {new Date().toLocaleDateString()}
