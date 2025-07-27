@@ -32,7 +32,8 @@ const BannerAdBox = () => {
 
   return (
     
-      <div
+     <>
+       <div
       ref={adRef}
       style={{
         width: "300px",
@@ -42,6 +43,26 @@ const BannerAdBox = () => {
         overflow: "hidden",
       }}
     ></div>
+       <a
+  href="https://www.profitableratecpm.com/rktbxput?key=e0ee1cf62fb360581b0ba0ae42dcf0e0"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button
+    style={{
+      padding: "10px 20px",
+      backgroundColor: "#4CAF50",
+      color: "white",
+      border: "none",
+      borderRadius: "5px",
+      cursor: "pointer"
+    }}
+  >
+    Visit Sponsored Page
+  </button>
+</a>
+
+     </>
       
   );
 };
