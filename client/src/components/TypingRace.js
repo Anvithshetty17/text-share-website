@@ -264,8 +264,9 @@ const TypingRace = () => {
                   ))}
                 </tbody>
               </table>
-            </div>
             <BannerAdBox />
+            </div>
+            
           ) : (
             <p>No previous results. Start typing to see your progress!</p>
           )}
