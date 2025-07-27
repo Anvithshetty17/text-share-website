@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import html2pdf from 'html2pdf.js';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const ResumeBuilder = () => {
   const [activeTab, setActiveTab] = useState('form');
@@ -105,6 +107,7 @@ const ResumeBuilder = () => {
   const ResumePreview = () => {
     const ModernTemplate = () => (
       <div className="resume-template modern-template">
+             <AdBanner />
         <div className="resume-header">
           <h1>{formData.personalInfo.fullName || 'Your Name'}</h1>
           <div className="contact-info">
@@ -207,6 +210,7 @@ const ResumeBuilder = () => {
 
   return (
     <div className="resume-builder-page">
+    <BannerAdBox />
       <div className="page-header text-center mb-4">
         <h1>Resume Builder</h1>
         <p className="text-muted">
