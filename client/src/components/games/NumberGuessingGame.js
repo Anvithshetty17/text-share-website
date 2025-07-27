@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BannerAdBox from "../BannerAdBox";
 
 const NumberGuessingGame = ({ onGameEnd }) => {
   const [targetNumber, setTargetNumber] = useState(0);
@@ -97,6 +98,7 @@ const NumberGuessingGame = ({ onGameEnd }) => {
 
   return (
     <div className="number-guessing-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>🎯 Number Guessing Game</h3>
         <div className="difficulty-section">
