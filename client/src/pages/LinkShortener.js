@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000';
 
@@ -83,6 +85,7 @@ const LinkShortener = () => {
 
   return (
     <div className="link-shortener-page">
+           <AdBanner />
       <div className="page-header text-center mb-4">
         <h1>Link Shortener</h1>
         <p className="text-muted">
@@ -115,7 +118,7 @@ const LinkShortener = () => {
                 Include http:// or https:// in your URL
               </small>
             </div>
-
+<BannerAdBox />
             <div className="form-group">
               <label className="form-label">Custom Slug (optional)</label>
               <input
