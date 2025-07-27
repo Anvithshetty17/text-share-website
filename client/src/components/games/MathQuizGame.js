@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './MathQuizGame.css';
+import BannerAdBox from "../BannerAdBox";
 
 const MathQuizGame = ({ onGameEnd }) => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -284,6 +285,7 @@ const MathQuizGame = ({ onGameEnd }) => {
 
   return (
     <div className="math-quiz-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>➕ Math Quiz</h3>
         <div className="game-info">
