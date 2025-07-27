@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './SudokuGame.css';
+import BannerAdBox from "../BannerAdBox";
 
 const SudokuGame = ({ onGameEnd }) => {
   const [board, setBoard] = useState([]);
@@ -194,6 +195,7 @@ const SudokuGame = ({ onGameEnd }) => {
 
   return (
     <div className="sudoku-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>🔢 Sudoku Puzzle</h3>
         <div className="game-info">
