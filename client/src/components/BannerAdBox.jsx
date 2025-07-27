@@ -2,32 +2,42 @@ import { useEffect } from "react";
 
 const BannerAdBox = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.setAttribute("data-cfasync", "false");
-    script.src = "//pl27271244.profitableratecpm.com/a788aec201f9275b949e28f6a1f6c00b/invoke.js";
+    const script1 = document.createElement("script");
+    script1.type = "text/javascript";
+    script1.innerHTML = `
+      atOptions = {
+        'key': '9bc28105adf40e37d2c54ae07abb78a4',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    `;
+    const script2 = document.createElement("script");
+    script2.type = "text/javascript";
+    script2.src = "//www.highperformanceformat.com/9bc28105adf40e37d2c54ae07abb78a4/invoke.js";
+    script2.async = true;
 
-    const existing = document.querySelector(`script[src="${script.src}"]`);
-    if (!existing) {
-      document.getElementById("banner-ad-wrapper")?.appendChild(script);
+    const container = document.getElementById("banner-iframe-wrapper");
+    if (container) {
+      container.appendChild(script1);
+      container.appendChild(script2);
     }
   }, []);
 
   return (
     <div
-      id="banner-ad-wrapper"
+      id="banner-iframe-wrapper"
       style={{
-        width: "300px", // Adjust to match the banner size you've chosen
+        width: "300px",
         height: "250px",
         margin: "20px auto",
         textAlign: "center",
-        backgroundColor: "#f5f5f5",
         overflow: "hidden",
       }}
-    >
-      <div id="container-a788aec201f9275b949e28f6a1f6c00b"></div>
-    </div>
+    ></div>
   );
 };
+
 
 export default BannerAdBox;
