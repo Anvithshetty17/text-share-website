@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import html2pdf from 'html2pdf.js';
 import './styles/TimetableMaker.css';
+import AdBanner from "./AdBanner";
+import BannerAdBox from "./BannerAdBox";
 
 const TimetableMaker = () => {
   const [userInfo, setUserInfo] = useState({
@@ -205,6 +207,7 @@ const TimetableMaker = () => {
         <h1>📅 Timetable Maker</h1>
         <p>Create and manage your academic schedule</p>
       </div>
+         <AdBanner />
 
       {/* User Information Section */}
       <div className="user-info-section">
@@ -315,7 +318,7 @@ const TimetableMaker = () => {
             </div>
           )}
         </div>
-
+<BannerAdBox />
         <div className="timetable-wrapper">
           <table className="timetable">
             <thead>
