@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BannerAdBox from "../BannerAdBox";
 
 const MemoryCardGame = ({ onGameEnd }) => {
   const [cards, setCards] = useState([]);
@@ -133,6 +134,7 @@ const MemoryCardGame = ({ onGameEnd }) => {
 
   return (
     <div className="memory-card-game">
+    <BannerAdBox />
       <div className="game-header">
         <h3>🧠 Memory Card Game</h3>
         <div className="game-info">
