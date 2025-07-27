@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BannerAdBox from "../BannerAdBox";
 
 // Placeholder game components
 const SudokuGame = ({ onGameEnd }) => (
@@ -107,6 +108,7 @@ const ReactionTimeGame = ({ onGameEnd }) => {
 
   return (
     <div style={{ textAlign: 'center', maxWidth: '400px', margin: '0 auto' }}>
+  <BannerAdBox />
       <h3>⚡ Reaction Time Test</h3>
       
       <div 
