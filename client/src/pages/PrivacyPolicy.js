@@ -1,8 +1,11 @@
 import React from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const PrivacyPolicy = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
+           <AdBanner />
       <div className="card">
         <h1 className="text-3xl font-bold text-center mb-6 text-primary">Privacy Policy</h1>
         <p className="text-sm text-gray-600 mb-6 text-center">
@@ -25,7 +28,7 @@ const PrivacyPolicy = () => {
               Privacy Policy on this page.
             </p>
           </section>
-
+<BannerAdBox />
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-primary">Information We Collect</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
