@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ColorMatchGame.css';
+import AdBanner from "../AdBanner";
+import BannerAdBox from "../BannerAdBox";
 
 const ColorMatchGame = ({ onGameEnd }) => {
   const [gameStarted, setGameStarted] = useState(false);
@@ -184,6 +186,7 @@ const ColorMatchGame = ({ onGameEnd }) => {
 
   return (
     <div className="color-match-game">
+           <AdBanner />
       <div className="game-header">
         <h3>🎨 Color Match</h3>
         <div className="game-info">
@@ -271,7 +274,7 @@ const ColorMatchGame = ({ onGameEnd }) => {
           <p>Best Streak: {streak}</p>
         </div>
       )}
-
+<BannerAdBox />
       <div className="game-instructions">
         <p>🎨 Click the color that matches the given name</p>
         <p>🔥 Build streaks for bonus points</p>
