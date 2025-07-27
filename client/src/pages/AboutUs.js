@@ -1,8 +1,12 @@
 import React from 'react';
+import AdBanner from "../components/AdBanner";
+import BannerAdBox from "../components/BannerAdBox";
 
 const AboutUs = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
+     <AdBanner />
+      
       <div className="card">
         <h1 className="text-3xl font-bold text-center mb-6 text-primary">About GoText</h1>
         
@@ -30,7 +34,7 @@ const AboutUs = () => {
               professionals, and businesses who need dependable digital tools.
             </p>
           </section>
-
+<BannerAdBox />
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-primary">Our Mission</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
