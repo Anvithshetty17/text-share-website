@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AdBanner from "../components/AdBanner";
 
 const Home = () => {
   const features = [
@@ -46,6 +47,7 @@ const Home = () => {
           🚫 No signup required • 🎨 Custom themes • 🔒 Privacy-focused
         </p>
       </div>
+     <AdBanner />
 
       <div className="features-grid grid grid-2">
         {features.map((feature, index) => (
@@ -61,7 +63,7 @@ const Home = () => {
           </Link>
         ))}
       </div>
-
+      <AdBanner />
       <div className="info-section mt-4">
         <div className="grid grid-3">
           <div className="card text-center">
@@ -84,7 +86,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+       <AdBanner />
       <div className="content-section mt-5">
         <div className="container">
           <h2 className="section-title text-center mb-4">Why Choose GoText?</h2>
@@ -124,7 +126,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+ <AdBanner />
       <div className="testimonials-section mt-5">
         <div className="container">
           <h2 className="section-title text-center mb-4">What Our Users Say</h2>
@@ -162,7 +164,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+ <AdBanner />
       <div className="cta-section mt-5">
         <div className="card text-center">
           <h2 className="mb-3">Ready to Get Started?</h2>
