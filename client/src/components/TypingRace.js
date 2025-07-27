@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './styles/TypingRace.css';
+import AdBanner from "./AdBanner";
+import BannerAdBox from "./BannerAdBox";
 
 const TypingRace = () => {
   const [currentText, setCurrentText] = useState('');
@@ -209,7 +211,7 @@ const TypingRace = () => {
             <span className="stat-value">{errors}</span>
           </div>
         </div>
-
+       <AdBanner />
         {currentText && (
           <div className="text-display">
             {renderText()}
@@ -263,6 +265,7 @@ const TypingRace = () => {
                 </tbody>
               </table>
             </div>
+            <BannerAdBox />
           ) : (
             <p>No previous results. Start typing to see your progress!</p>
           )}
