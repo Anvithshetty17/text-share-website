@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-
+import BannerAdBox from "../BannerAdBox";
 const SnakeGame = ({ onGameEnd }) => {
   const BOARD_SIZE = 20;
   const INITIAL_SNAKE = [{ x: 10, y: 10 }];
@@ -146,6 +146,7 @@ const SnakeGame = ({ onGameEnd }) => {
 
   return (
     <div className="snake-game">
+    <BannerAdBox />
       <div className="game-info">
         <div className="game-score">Score: {score}</div>
         <div className="game-controls">
