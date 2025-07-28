@@ -18,6 +18,7 @@ const limiter = rateLimit({
 app.use(limiter);
 const allowedOrigins = [
   'https://gotext.anvithshetty.me',
+  'https://gotext.vercel.app',
   'http://localhost:3000' // dev environment
 ];
 
