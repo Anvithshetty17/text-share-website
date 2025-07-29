@@ -36,8 +36,13 @@
 .coding-nav-logo {
   color: white;
   font-size: 24px;
-  font-weight: bold;
+
   text-decoration: none;
+      text-align: center;
+    margin-right: 2%;
+    margin: 1.2%;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .coding-nav-menu {
