@@ -18,6 +18,7 @@ import GamingZone from './components/GamingZone';
 import TimetableMaker from './components/TimetableMaker';
 import CodingPage from './pages/CodingPage';
 
+
 function App() {
   return (
     <Router>
