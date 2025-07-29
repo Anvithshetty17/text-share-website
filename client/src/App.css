@@ -154,6 +154,14 @@ body {
   position: relative;
   height: 60px;
 }
+.nav-container ul li {
+  background: none;
+  border-left: none;
+  border-radius: 12px;
+  position: relative;
+  transition: all .3s ease;
+}
+
 
 .nav-brand {
   font-size: 1.875rem;
