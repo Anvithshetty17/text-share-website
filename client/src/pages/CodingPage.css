@@ -12,6 +12,8 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   line-height: 1.6;
+      width: 122%;
+    margin-left: -11%;
 }
 
 /* Navigation Styles for Coding Page */
