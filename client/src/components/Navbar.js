@@ -244,9 +244,7 @@ const Navbar = () => {
               <span className="theme-icon">
                 {theme === 'light' ? '🌙' : '☀️'}
               </span>
-              <span className="theme-text">
-                {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
-              </span>
+             
             </button>
           </li>
         </ul>
