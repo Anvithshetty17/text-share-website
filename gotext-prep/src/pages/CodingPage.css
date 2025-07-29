@@ -89,6 +89,7 @@ ul li {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  color: blue;
 }
 
 ul li:hover {
