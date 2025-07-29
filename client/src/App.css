@@ -155,7 +155,8 @@ body {
   height: 60px;
 }
 .nav-container ul li {
-  background: none;
+padding: 10px;
+  color: blue;
   border-left: none;
   border-radius: 12px;
   position: relative;
