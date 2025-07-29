@@ -16,7 +16,7 @@ import TermsOfService from './pages/TermsOfService';
 import TypingRace from './components/TypingRace';
 import GamingZone from './components/GamingZone';
 import TimetableMaker from './components/TimetableMaker';
-import CodingPage from './pages/CodingPage';
+
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
-   <Route path="/CodingPage" element={<CodingPage />} />
+ 
           </Routes>
         </main>
         <Footer />
