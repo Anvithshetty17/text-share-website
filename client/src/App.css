@@ -154,14 +154,7 @@ body {
   position: relative;
   height: 60px;
 }
-.nav-container ul li {
-padding: 10px;
-  color: blue;
-  border-left: none;
-  border-radius: 12px;
-  position: relative;
-  transition: all .3s ease;
-}
+
 
 
 .nav-brand {
