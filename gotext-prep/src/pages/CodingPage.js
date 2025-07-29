@@ -51,7 +51,7 @@ const CodingPage = () => {
       {/* Navigation for coding sections */}
       <nav className="coding-navbar">
         <div className="coding-nav-container">
-          <div className="coding-nav-logo">Java Coding Prep</div>
+          <div className="coding-nav-logo">Gotext Prep</div>
           <ul className="coding-nav-menu">
             {navItems.map(item => (
               <li
