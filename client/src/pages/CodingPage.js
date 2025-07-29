@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './CodingPage.css';
-import Home from '../components/Home';
-import Strings from '../components/Strings';
-import Arrays from '../components/Arrays';
-import Collections from '../components/Collections';
-import DataStructures from '../components/DataStructures';
-import PracticeQuestions from '../components/PracticeQuestions';
-import Algorithms from '../components/Algorithms';
-import InterviewTips from '../components/InterviewTips';
+import Home from '../components/prep/Home';
+import Strings from '../components/prep/Strings';
+import Arrays from '../components/prep/Arrays';
+import Collections from '../components/prep/Collections';
+import DataStructures from '../components/prep/DataStructures';
+import PracticeQuestions from '../components/prep/PracticeQuestions';
+import Algorithms from '../components/prep/Algorithms';
+import InterviewTips from '../components/prep/InterviewTips';
 
 const CodingPage = () => {
   const [currentSection, setCurrentSection] = useState('home');
