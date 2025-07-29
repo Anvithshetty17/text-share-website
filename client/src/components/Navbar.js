@@ -142,6 +142,19 @@ const Navbar = () => {
               Text Share
             </Link>
           </li>
+               <li>
+  <a
+    href="https://gotext-prep.vercel.app/"
+    className="nav-link"
+    onClick={closeMenu}
+    target="_blank" // optional: opens in new tab
+    rel="noopener noreferrer" // security best practice
+  >
+    <span className="nav-icon">📝</span>
+    gotext Prep
+  </a>
+</li>
+
           <li>
             <Link 
               to="/resume-builder" 
