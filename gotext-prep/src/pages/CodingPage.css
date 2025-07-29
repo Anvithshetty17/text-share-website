@@ -48,7 +48,8 @@
 }
 
 .coding-nav-item {
-  color: white;
+  color: #63448b;
+    font-weight: bolder;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 25px;
@@ -89,7 +90,7 @@ ul li {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  color: blue;
+ 
 }
 
 ul li:hover {
