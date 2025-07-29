@@ -1,31 +1,39 @@
 {
-  "name": "student-tools-mern",
-  "version": "1.0.0",
-  "description": "MERN stack website for students with text sharing, resume builder, and study tools",
-  "main": "server/server.js",
-  "scripts": {
-    "start": "node server/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server/server.js",
-    "client": "cd client && npm start",
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "install-server": "npm install",
-    "install-all": "npm install && npm run install-client"
-  },
+  "name": "my-react-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express-rate-limit": "^6.10.0",
-    "nanoid": "^3.3.6"
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^8.2.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": ["mern", "student", "tools", "text-sharing", "resume-builder"],
-  "author": "Student Tools Team",
-  "license": "MIT"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
