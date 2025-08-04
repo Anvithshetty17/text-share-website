@@ -175,7 +175,7 @@ const Admin = () => {
             
             <div className="login-info mt-3">
               <small className="text-muted">
-                Default password: admin123 (change in production)
+                {/* ... Default password: admin123 (change in production)*/}
               </small>
             </div>
           </div>
