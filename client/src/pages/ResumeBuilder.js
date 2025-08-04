@@ -43,6 +43,10 @@ const ResumeBuilder = () => {
     certifications: ['']
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const templates = {
     modern: 'Modern',
     classic: 'Classic',
