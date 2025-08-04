@@ -37,6 +37,10 @@ const Home = () => {
     }
   ];
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-page">
       <div className="hero-section text-center mb-4">
