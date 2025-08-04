@@ -46,9 +46,7 @@ const Home = () => {
         <p className="hero-subtitle text-muted">
           Your all-in-one platform for text sharing and productivity tools
         </p>
-        <p className="hero-description">
-          🚫 No signup required • 🎨 Custom themes • 🔒 Privacy-focused
-        </p>
+        
       </div>
      <AdBanner />
 
