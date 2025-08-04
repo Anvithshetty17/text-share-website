@@ -190,16 +190,21 @@ const Home = () => {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+          color: white;
+        
         }
 
         .hero-subtitle {
           font-size: 1.25rem;
           margin-bottom: 1rem;
+          color: white;
+        
         }
 
         .hero-description {
           font-size: 1rem;
           margin-bottom: 2rem;
+          color: white;
         }
 
         .feature-card {
