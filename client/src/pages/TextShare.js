@@ -16,6 +16,11 @@ const TextShare = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleCreate = async (e) => {
     e.preventDefault();
     setLoading(true);
