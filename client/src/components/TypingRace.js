@@ -39,6 +39,9 @@ const TypingRace = () => {
     ]
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const getRandomText = () => {
     const samples = textSamples[difficulty];
     return samples[Math.floor(Math.random() * samples.length)];
