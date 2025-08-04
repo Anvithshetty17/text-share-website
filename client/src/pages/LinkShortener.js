@@ -16,6 +16,10 @@ const LinkShortener = () => {
   const [error, setError] = useState('');
   const [statsSlug, setStatsSlug] = useState('');
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
