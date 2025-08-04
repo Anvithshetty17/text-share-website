@@ -186,7 +186,7 @@ const Home = () => {
           font-size: 3rem;
           font-weight: bold;
           margin-bottom: 1rem;
-          background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+          
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
