@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import AdBanner from "../components/AdBanner";
 import BannerAdBox from "../components/BannerAdBox";
 
