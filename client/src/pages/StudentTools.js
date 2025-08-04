@@ -21,6 +21,9 @@ const StudentTools = () => {
     isBreak: false,
     cycle: 0
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Todo List State
   const [todos, setTodos] = useState([]);
