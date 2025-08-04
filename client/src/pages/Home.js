@@ -1,8 +1,7 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import AdBanner from "../components/AdBanner";
 import BannerAdBox from "../components/BannerAdBox";
-import { useEffect } from "react";
+import { React, useEffect } from "react";
 
 
 
