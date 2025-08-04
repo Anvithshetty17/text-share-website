@@ -225,6 +225,8 @@ const Navbar = () => {
               About
             </Link>
           </li>
+
+                {/* 
           <li>
             <Link 
               to="/contact" 
@@ -235,6 +237,8 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+
+          */}
           <li>
             <button 
               onClick={toggleTheme} 
