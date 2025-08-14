@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import html2pdf from 'html2pdf.js';
 import AdBanner from "../components/AdBanner";
 import BannerAdBox from "../components/BannerAdBox";
