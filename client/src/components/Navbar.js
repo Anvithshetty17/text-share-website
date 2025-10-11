@@ -101,8 +101,8 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''} ${scrollDirection === 'down' ? 'navbar-hidden' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="nav-brand" onClick={closeMenu}>
-          <span className="brand-icon">📝</span>
-          <span className="brand-text">GoText</span>
+          <span className="brand-icon">👨‍💻</span>
+          <span className="brand-text">Alex Johnson</span>
         </Link>
         
         <button 
@@ -133,97 +133,44 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link 
-              to="/text-share" 
-              className={`nav-link ${isActive('/text-share') ? 'active' : ''}`}
+            <a 
+              href="#about" 
+              className="nav-link"
               onClick={closeMenu}
             >
-              <span className="nav-icon">📝</span>
-              Text Share
-            </Link>
-          </li>
-               <li>
-  <a
-    href="https://gotext-prep.vercel.app/"
-    className="nav-link"
-    onClick={closeMenu}
-    target="_blank" // optional: opens in new tab
-    rel="noopener noreferrer" // security best practice
-  >
-    <span className="nav-icon">📝</span>
-    gotext Prep
-  </a>
-</li>
-
-          <li>
-            <Link 
-              to="/resume-builder" 
-              className={`nav-link ${isActive('/resume-builder') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">📄</span>
-              Resume Builder
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/link-shortener" 
-              className={`nav-link ${isActive('/link-shortener') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🔗</span>
-              Link Shortener
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/student-tools" 
-              className={`nav-link ${isActive('/student-tools') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🛠️</span>
-              Student Tools
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/typing-race" 
-              className={`nav-link ${isActive('/typing-race') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🏎️</span>
-              Typing Race
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/gaming-zone" 
-              className={`nav-link ${isActive('/gaming-zone') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">🎮</span>
-              Gaming Zone
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/timetable-maker" 
-              className={`nav-link ${isActive('/timetable-maker') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">📅</span>
-              Timetable Maker
-            </Link>
-          </li>
-          <li>
-            <Link 
-              to="/about" 
-              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              <span className="nav-icon">ℹ️</span>
+              <span className="nav-icon">👨‍💻</span>
               About
-            </Link>
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#projects" 
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              <span className="nav-icon">💼</span>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              <span className="nav-icon">⚡</span>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#contact" 
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              <span className="nav-icon">📞</span>
+              Contact
+            </a>
           </li>
 
                 {/* 
